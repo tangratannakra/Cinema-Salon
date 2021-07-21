@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cinema</title>
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <small class="salon-meta"><span></span></small>
+            <h2 class="screen__title">Movie</h2>
+            <p class="movie-dscription"></p>
+            <div class="form-row col">
+                <label for="select-movie" class="visually-hidden">Select Movie</label>
+                <select id="select-movie" class="form-select salon-select" tabindex="0">
+                    <option value="0" selected> Please, Select a movie</option>
+                </select>
+            </div>
+        </div>
+        <section class="ticket">
+            <h2 class="visually-hidden">Your Ticket Info</h2>
+            <div class="row">
+                <h2 class="ticket__title col-md-12">Movie name</h2>
+                <div class="ticket__info col-md-12"><span class="ticket__number"></span> seats selected for a price of <span class="ticket__price"></span> $</div>
+                <button class="btn btn-buy">Buy ticket</button>
+            </div>
+        </section>
+    </header>
+    <main class="salon__container container">
+        <div class="row mx-0">
+            <div class="screen"></div>
+        </div>
+        <div class="movie-legend row mx-auto">
+            <div class="movie-legend__item col-md-4"><div class="seat"><div class="visually-hidden">Seat is available</div></div><div class="movie-legend__title">Seat is available</div></div>
+            <div class="movie-legend__item col-md-4"><div class="seat seat--selected"><div class="visually-hidden">Seat is selected</div></div><div class="movie-legend__title">Seat is selected</div></div>
+            <div class="movie-legend__item col-md-4"><div class="seat seat--na"><div class="visually-hidden">Seat is not-available</div></div><div class="movie-legend__title">Seat not available</div></div>
+        </div>
+        
+        <div class="salon">
+            <div id="salon-row-1" class="salon-row row row-no-gutters">
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-2" class="salon-row row">
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+               <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-3" class="salon-row row">
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-4" class="salon-row row" >
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-4" class="salon-row row" >
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-4" class="salon-row row" >
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-4" class="salon-row row" >
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>
+            <div id="salon-row-4" class="salon-row row" >
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+                <div class="col"><div class="seat"><div class="visually-hidden">Seat is available</div></div></div>
+            </div>    
+        </div>
+        <button class="btn btn-clear col-md-12">Clear Selection</button>
+    </main>
+    <section class="modal d-none">
+        <div class="modal__info">
+            <h2>Ticket info</h2>
+            <p>Congratulations, you just bought <span class="modal__tickets">5</span> tickets for <span class="modal__name">Movie name</span> for <span class="modal__date">22.03.20</span> at <span class="modal__time">projection</span></p>
+            <p>Please, check your e-mail to collect your tickets.</p>
+            <button class="btn btn-close"></button>
+        </div>  
+    </section>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
